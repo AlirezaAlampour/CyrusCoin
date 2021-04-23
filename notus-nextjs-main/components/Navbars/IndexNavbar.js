@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+// import logo from '/cyrus/public/img/cyrus-min.png';
 // components
 
 import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
@@ -11,13 +12,24 @@ export default function Navbar(props) {
       <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <Link href="/">
+            <Link  href="/">
               <a
-                className="text-blueGray-700 text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                href="#pablo"
+                className="text-blueGray-700 text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                href="#"
+
               >
+                  <img
+                    alt="logo"
+                    src={'../img/cyrus-min.png'}
+                    className="shadow-lg rounded-full mx-auto max-w-100-px"
+                  />
                 Cyrus Coin
               </a>
+              {/* <img
+                  alt="..."
+                  className="max-w-full rounded-lg shadow-lg"
+                  src='/img/cyrus.png'
+                /> */}
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

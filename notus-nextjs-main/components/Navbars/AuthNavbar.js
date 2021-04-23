@@ -17,6 +17,11 @@ export default function Navbar(props) {
                 className="text-white text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
+                                  <img
+                    alt="logo"
+                    src={'img/cyrus-min.png'}
+                    className="shadow-lg rounded-full mx-auto max-w-120-px"
+                  />
                 Cyrus Coin
               </a>
             </Link>

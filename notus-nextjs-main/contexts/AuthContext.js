@@ -12,11 +12,17 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   function signup(email, password) {
-    return auth.createUserWithEmailAndPassword(email, password)
+    // return auth.createUserWithEmailAndPassword(email, password).then(( )=> this.props.navigation.navigate())
+    return auth.createUserWithEmailAndPassword(email, password).then((u) =>{
+      console.log("succesfully registered")
+    })
+
   }
 
   function login(email, password) {
-    return auth.signInWithEmailAndPassword(email, password)
+    return auth.signInWithEmailAndPassword(email, password).then((u) =>{
+      console.log("succesfully signed in")
+    })
   }
 
   function logout() {

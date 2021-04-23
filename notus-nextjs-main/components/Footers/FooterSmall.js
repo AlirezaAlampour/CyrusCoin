@@ -32,7 +32,7 @@ export default function FooterSmall(props) {
                 </li> */}
                 <li>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=nnjs-footer-small"
+                    href="/"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
                     About Us
@@ -41,7 +41,7 @@ export default function FooterSmall(props) {
                 <li>
                       <a
                         className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                        href="https://creative-tim.com/terms?ref=nnjs-footer"
+                        href="/"
                       >
                         Terms & Conditions
                       </a>
@@ -49,7 +49,7 @@ export default function FooterSmall(props) {
                     <li>
                       <a
                         className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                        href="https://creative-tim.com/privacy?ref=nnjs-footer"
+                        href="/"
                       >
                         Privacy Policy
                       </a>
@@ -57,7 +57,7 @@ export default function FooterSmall(props) {
                     <li>
                       <a
                         className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                        href="https://creative-tim.com/contact-us?ref=nnjs-footer"
+                        href="/"
                       >
                         Contact Us
                       </a>

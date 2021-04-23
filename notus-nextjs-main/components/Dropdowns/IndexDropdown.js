@@ -145,7 +145,7 @@ const IndexDropdown = () => {
         >
           {/* No Layout */}
         </span>
-        <Link href="/landing">
+        {/* <Link href="/landing">
           <a
             href="#pablo"
             className={
@@ -154,7 +154,7 @@ const IndexDropdown = () => {
           >
             How it works
           </a>
-        </Link>
+        </Link> */}
         {/* <Link href="/profile">
           <a
             href="#pablo"

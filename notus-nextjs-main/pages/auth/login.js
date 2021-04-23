@@ -8,7 +8,7 @@ import Link from "next/link";
 import Auth from "layouts/Auth.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import {useAuth} from '../../contexts/AuthContext'
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect, withRouter } from "react-router-dom";
 
 
 export default function Login() {
@@ -23,11 +23,13 @@ export default function Login() {
   async function handleSubmit(e) {
     e.preventDefault()
 
+
     try {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
-      history.push("/")
+      history.push("/admin/dashboard")
+      return <Redirect to ="/"/>
     } catch {
       setError("Failed to log in")
     }
@@ -35,6 +37,8 @@ export default function Login() {
     setLoading(false)
   }
   
+
+
   return (
     <>
       <IndexNavbar transparent />
@@ -70,7 +74,7 @@ export default function Login() {
                 <div className="text-blueGray-400 text-center mb-3 font-bold">
                   {/* <small>Or sign in with credentials</small> */}
                 </div>
-                {error && <Alert variant="danger">{error}</Alert>}
+                {/* {error && <Alert variant="danger">{error}</Alert>} */}
                 <form onSubmit={handleSubmit}>
                   <div className="relative w-full mb-3">
                     <label
@@ -119,7 +123,7 @@ export default function Login() {
                   <div className="text-center mt-6">
                     <button
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                      type="button"
+                      type="button" onClick={handleSubmit}
                     >
                       Sign In
                     </button>

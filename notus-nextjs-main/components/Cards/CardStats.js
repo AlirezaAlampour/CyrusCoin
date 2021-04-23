@@ -23,6 +23,8 @@ export default function CardStats({
               <span className="font-semibold text-xl text-blueGray-700">
                 {statTitle}
               </span>
+              
+              
             </div>
             <div className="relative w-auto pl-4 flex-initial">
               <div
@@ -31,8 +33,15 @@ export default function CardStats({
                   statIconColor
                 }
               >
-                <i className={statIconName}></i>
+                {/* <i className={statIconName}><a>Buy</a></i> */}
+                <a
+                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
+                  target="_blank"
+                  className="text-white-700 hover:text-blueGray-500 text-lg block  no-underline font-semibold"
+                >                  Buy
+                </a>
               </div>
+              
             </div>
           </div>
           <p className="text-sm text-blueGray-400 mt-4">
